@@ -284,10 +284,11 @@ a {
     letter-spacing: 0.02em;
 }
 
+/* nagłówek */
 .container {
         width: 1158px;
         margin: 0 auto;
-        padding: 0 15px;
+        padding: 0,15px,0,15px;
 }
 
 /* nawigacja */
@@ -310,37 +311,108 @@ a {
     border: 0px,0px,1px,0px;
     border-color: var(--cornflower-color);
 }
+
+.header {
+    border-bottom: 1px, solid, #E7E9FC;
+    padding: 0px, 15px; 0px, 15px;
+}
+
+.logo-box {
+    margin-right: 76px;
+}
+
 /* lista menu glównego w nawigacji */
-.list {
+/* .list {
     display: flex;
     list-style: none;
     padding: 30px;
+    margin-right: 40px;
+} */
+.menu-nav-box {
+    display: flex;
+    list-style: none;
+    padding: 10px;
+    margin-right: 40px;
 }
-
+.menu-address-box {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 10px;
+    margin-right: 40px;
+               
+}
 .menu {
     margin: 0 10px;
 }
-
 .menu a {
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
 }
 
-.address {
+/* .address {
     display: flex;
     justify-content: space-between;
     margin-left: auto;
     background-color: var(--white-color);
     padding: 30px;
     height: 60px;
-}
-.contact {
+} */
+/* .contact {
     display: flex;
     list-style: none;
     padding: 30px;
+} */
+/* sekcja description Solutions */
+.desc-container {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    align-items: center;
+}
+.title {
+    max-width: 496px;
+    /* height: 120px;
+    top: 260px;
+    left: 472px; */
+}
+.button-index {
+    /* display: flex;
+    flex-direction: column; */
+    align-items: center;
+    border: none;
+    height: 56px;
+    padding: 16px,32px,16px,32px;
+    border-radius: 4px;
 }
 
+/* druga sekcja Solutions */
+.features-container {
+    padding: 120px,0,120px;
+}
+/* wzorzec .visually-hidden do ukrycia nagłówka (zbiór styli wykorzystywanych do pełnego ukrycia elementu)*/
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.features-elements {
+    display: flex;
+    flex-direction: column;
+    margin-right: 24px;
+
+}
+
+.img {
+    display: block;
+}
 /* images What are we doing */
 .scope-section {
     display: flex;
@@ -388,18 +460,22 @@ a {
     margin: 20px;
 }
 
-/* wzorzec .visually-hidden do ukrycia nagłówka (zbiór styli wykorzystywanych do pełnego ukrycia elementu)*/
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+/* footer */
+.footer-container {
+    padding: 100px,0,100px,0;
 }
+/* .a {
+    display: inline-block;
+    margin-bottom: 16px; */
+.logo {
+    display: inline-block;
+    margin-bottom: 16px;
+    max-width: 264px;
+}
+
+
+
+
+
 
 
