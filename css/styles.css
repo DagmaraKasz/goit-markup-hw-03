@@ -268,7 +268,6 @@ a {
     text-decoration: none;
 }
 
-
 .page-footer {
     background-color:#2e2f42;
     .studio-highlight {
@@ -284,14 +283,14 @@ a {
     letter-spacing: 0.02em;
 }
 
-/* nagłówek */
+/* nagłówek - dodwanie kontenerów*/
 .container {
         width: 1158px;
         margin: 0 auto;
-        padding: 0,15px,0,15px;
+        padding: 0 15px 0 15px;
 }
 
-/* nawigacja */
+/* nawigacja dla Index i Portfolio*/
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -311,9 +310,9 @@ a {
     border-color: var(--cornflower-color);
 }
 
-.header {
+.header-main-class {
     border-bottom: 1px, solid, #E7E9FC;
-    padding: 0px, 15px; 0px, 15px;
+    padding: 0px, 15px, 0px, 15px;
 }
 
 .logo-box {
@@ -414,7 +413,7 @@ a {
 
 }
 
-.image {
+.img {
     display: block;
 }
 /* images What are we doing */
