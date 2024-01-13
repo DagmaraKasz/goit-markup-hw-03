@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studio</title>
 
+    <link href="https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
@@ -14,7 +15,8 @@
 </head>
 <body>
     <header>
-        <nav>
+      <div class="container">
+        <nav class="nav">
             <a class="logo link" href="./index.html">
                 Web<span class="studio-highlight">Studio</span>
             </a>
@@ -24,13 +26,14 @@
                 <li class="menu"><a class="link" href="">Contacts</a></li>
             </ul>
         </nav>
-
+        
         <address class="address">
             <ul class="list">
-                <li class="contact"><a class="link"  href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="contact"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                 <li class="contact"><a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
             </ul>
         </address>
+      </div>  
     </header>
     
     <main>
@@ -72,62 +75,64 @@
 
         <section class="scope-section list">
             <h2 class="subtitle">What are we doing</h2>
-            <ul class="list">
+            <ul class="list image_container_all">
                 <li>
-                    <img 
-                        src="./images/img_1.jpg" alt="computer" 
-                        width="360" 
-                        height="300" 
-                    />
+                    <div class="image_container">
+                    <img src="./images/img_1.jpg" alt="computer" width="360" height="300" />
+                    </div>
                 </li>         
                 <li>
-                    <img 
-                        src="./images/img_2.jpg" alt="mobilephone"
-                        width="360" 
-                        height="300"  
-                    />
+                    <div class="image_container">
+                    <img src="./images/img_2.jpg" alt="mobilephone" width="360" height="300" />
+                    </div>
                 </li>
                 <li>
-                    <img 
-                        src="./images/img_3.jpg" 
-                        alt="computer&mobilephone"
-                        width="360" 
-                        height="300" 
-                    />
+                    <div class="image_container">
+                    <img src="./images/img_3.jpg" alt="computer&mobilephone" width="360" height="300" />
+                    </div>
+
                 </li>
             </ul>
         </section>
 
         <section class="people">
-            <h2 class="our-team">Our Team</h2>
-            <ul class="list">
-                <li class="list-people">
-                    <img 
-                        src="./images/img_5.jpg" 
-                        alt="Smiling bearded man in middle age" 
-                        width="264" 
-                        height="260" 
-                    />
-                    <h3 class="people-names">Mark Guerrero</h3>
-                    <p class="akapit">Product Designer</p>
-                </li>
-                <li class="list-people">
-                    <img src="./images/img_6.jpg" alt="Smiling young man in shirt" width="264" height="260" />
-                    <h3 class="people-names">Tom Ford</h3>
-                    <p class="akapit">Frontend Developer</p>
-                </li>
-                <li class="list-people">
-                    <img src="./images/img_7.jpg" alt="Smiling young woman in sweater" width="264" height="260" />
-                    <h3 class="people-names">Camila Garcia</h3>
-                    <p class="akapit">Marketing</p>
-                </li>
-                <li class="list-people">
-                    <img src="./images/img_8.jpg" alt="Smiling bearded young man in tshirt" width="264" height="260" />
-                    <h3 class="people-names">Daniel Wilson</h3>
-                    <p class="akapit">UI Designer</p>
-                </li>
-            </ul>
+            <div class="container-our-team">
+                <h2 class="our-team">Our Team</h2>
+                <ul class="list">
+                    <div class="people_box">
+                        <li class="list-people">
+                            <img src="./images/img_5.jpg" alt="Smiling bearded man in middle age" width="264" height="260" />
+                            <h3 class="people-names">Mark Guerrero</h3>
+                            <p class="akapit">Product Designer</p>
+                        </li>
+                </div>
+                    <div class="people_box">
+                        <li class="list-people">
+                            <img src="./images/img_6.jpg" alt="Smiling young man in shirt" width="264" height="260" />
+                            <h3 class="people-names">Tom Ford</h3>
+                            <p class="akapit">Frontend Developer</p>
+                        </li>
+                    </div>
+                    <div class="people_box">
+                        <li class="list-people">
+                            <img src="./images/img_7.jpg" alt="Smiling young woman in sweater" width="264" height="260" />
+                            <h3 class="people-names">Camila Garcia</h3>
+                            <p class="akapit">Marketing</p>
+                        </li>
+                    </div>
 
+                    <div class="people_box">
+                        <li class="list-people">
+                            <img src="./images/img_8.jpg" alt="Smiling bearded young man in tshirt" width="264" height="260" />
+                            <h3 class="people-names">Daniel Wilson</h3>
+                            <p class="akapit">UI Designer</p>
+                        </li>
+                    </div>
+
+                </ul>
+            </div>
+                
+            
         </section>
 
         </main>
