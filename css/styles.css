@@ -467,7 +467,8 @@ służący do pionowego wyrównania nawigacji i kontaktów */
 }
 /* nagłówek h2 our team */
 .our-team {
-    justify-content: center;
+    text-align: center;
+    /* justify-content: center; */
     margin-bottom: 72px;
     width: 162px;
     height: 40px;
@@ -477,27 +478,29 @@ służący do pionowego wyrównania nawigacji i kontaktów */
     display: flex;
     justify-content: center;
     gap: 24px;
+    /* width: calc((100% - 72px)/4); */
 }
 .list-people {
     width: 264px;
     height: 380px;
-    width: calc((100% - 72px)/4);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
 }
 .names-positions-box {
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 16px;
     padding-right: 16px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
 }
 .people-names {
     text-align: center;
     margin-bottom: 8px;
 }
-
+.positions {
+    text-align: center;
+}
 
 /* footer */
 .page-footer {
