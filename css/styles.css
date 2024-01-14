@@ -296,8 +296,7 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    height: 72px;
-    border-bottom: 1px, solid, #E7E9FC;
+    border-bottom: 1px solid #E7E9FC;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -310,9 +309,6 @@ służący do pionowego wyrównania nawigacji i kontaktów */
     align-items: baseline;
     background-color: var(--white-color);
     padding: 20px;
-    height: 72px;
-    width: 1440px;
-    border: 0px,0px,1px,0px;
     border-color: var(--cornflower-color);
 }
 
@@ -342,10 +338,12 @@ służący do pionowego wyrównania nawigacji i kontaktów */
 .menu-address-box {
     list-style: none;
     display: flex;
-    list-style: none;
-    padding: 10px;
-    margin-right: 40px;
-               
+    justify-content: center;
+    align-content: baseline;
+    padding: 10px;           
+}
+.contact {
+    padding-right: 40px;
 }
 .menu {
     margin: 0 10px;
