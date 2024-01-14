@@ -342,7 +342,6 @@ służący do pionowego wyrównania nawigacji i kontaktów */
 .menu-address-box {
     list-style: none;
     display: flex;
-    flex-direction: column;
     list-style: none;
     padding: 10px;
     margin-right: 40px;
@@ -405,10 +404,10 @@ służący do pionowego wyrównania nawigacji i kontaktów */
 .features-list {
     display: flex;
     margin-right: 24px;
-    /* width: calc((100% - 72px) / 4); */
+    /* width: calc((100% - 72px)/4); */
 }
 .features-elements {
-    width: calc((100% - 72px) / 4);
+    width: calc((100% - 72px)/4);
 }
 
 .highlight-element {
