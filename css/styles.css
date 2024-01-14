@@ -367,22 +367,24 @@ służący do pionowego wyrównania nawigacji i kontaktów */
     list-style: none;
     padding: 30px;
 } */
-/* sekcja description Solutions */
+/* sekcja pierwsza description Solutions */
 .desc-container {
     padding-top: 188px;
     padding-bottom: 188px;
     align-items: center;
 }
 .title {
+    display:inline;
     max-width: 496px;
-    /* height: 120px;
+    margin-bottom: 48px;
+    height: 120px;
     top: 260px;
-    left: 472px; */
+    left: 472px;
 }
 .button-index {
-    /* display: flex;
-    flex-direction: column; */
-    align-items: center;
+    display: block;
+    margin-left: 636px;
+    min-width: 169px
     border: none;
     height: 56px;
     padding: 16px,32px,16px,32px;
@@ -391,13 +393,30 @@ służący do pionowego wyrównania nawigacji i kontaktów */
 
 /* druga sekcja Solutions */
 .features-container {
-    padding: 120px,0,120px;
-}
-.highlight-element {
     display: flex;
-    flex-direction: row;
-    margin-right: 24px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    gap: 24px;
 }
+.features-list {
+    display: flex;
+    margin-right: 24px;
+    width: calc((100% - 72px) / 4);
+}
+
+.highlight-element {
+    width: 264px;
+    height: 24px;
+    margin-bottom:8px;
+    line-height: 24px;
+    font-size: 20px;
+}
+.akapit {
+    width: 264px;
+    height: 24px;
+    font-size: 16px;
+}
+
 /* wzorzec .visually-hidden do ukrycia nagłówka (zbiór styli wykorzystywanych do pełnego ukrycia elementu)*/
 .visually-hidden {
     position: absolute;
@@ -421,28 +440,29 @@ służący do pionowego wyrównania nawigacji i kontaktów */
 .img {
     display: block;
 }
-/* images What are we doing */
+/* trzecia sekcja images What are we doing */
 .scope-section {
     display: flex;
     flex-direction: column;
+    padding-bottom: 120px;
+    margin-bottom: 10px;
 }
+/* tekst What are we doing */
 .subtitle {
     display: flex;
     justify-content: center;
     padding: 10px;
+    margin-bottom: 72px;
 }
 
 .image_container_all {
-     display: flex;
-     justify-content: space-evenly;
+    display: flex;
+    padding-bottom: 120px;
+    margin-bottom: 120px;
+    gap: 24px;
  }
 
-.image_container img {
-    width: 400px;
-    height: 250px;
-}
-
-/* our team sekcja */
+/* czwarta sekcja our team */
 .container-our-team {
     display: flex;
     flex-direction: column;
@@ -450,23 +470,47 @@ służący do pionowego wyrównania nawigacji i kontaktów */
     padding: 10px;
     height: 732px;
 }
+/* nagłówek h2 our team */
 .our-team {
+    justify-content: center;
+    margin-bottom: 72px;
     width: 162px;
     height: 40px;
 }
+/* cały box dla zdj nagłówka h3 i paragrafu */
 .people-box {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px, 0px, 32px, 0px;
-    height: 380px;
-    width: 264px;
-    border-bottom-left-radius: 4px, 4px;
-    gap: 32px;
+    gap: 24px;
    }
-.list-people {
-    margin: 20px;
+
+.names-positions-box {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
+.people-names {
+    text-align: center;
+    margin-bottom: 8px;
+}
+.akapit {
+    text-align: center;
+}
+/* .list-people {
+    margin: 20px;
+} */
+
+        /* flex-direction: column;
+        width: calc((100% - 72px) / 4);
+        /* align-items: center;
+        padding: 0px, 0px, 32px, 0px;
+        height: 380px;
+        width: 264px;
+        border-bottom-left-radius: 4px, 4px; */ */
+
+
+
+
 
 /* footer */
 .footer-container {
