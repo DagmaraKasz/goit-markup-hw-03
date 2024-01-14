@@ -291,7 +291,7 @@ a {
 }
 
 /* nawigacja dla Index i Portfolio*/
-.nav-container {
+.nav-all-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -299,15 +299,15 @@ a {
     height: 72px;
 }
 .nav {
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
     background-color: var(--white-color);
     padding: 20px;
     height: 72px;
     width: 1440px;
     border: 0px,0px,1px,0px;
-    border-color: var(--cornflower-color); */
+    border-color: var(--cornflower-color);
 }
 
 .header-main-class {
@@ -333,6 +333,7 @@ a {
     margin-right: 40px;
 }
 .menu-address-box {
+    list-style: none;
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -468,9 +469,10 @@ a {
     padding-top: 100px;
     padding-bottom: 100px;
 }
-/* .a {
+.logo-footer-box {
     display: inline-block;
-    margin-bottom: 16px; */
+    margin-bottom: 16px;
+ }
 .logo {
     display: inline-block;
     margin-bottom: 16px;
@@ -502,7 +504,7 @@ który służy do określenia odstępu od listy */
 /* Jeszcze jedna lista wewn kontenera - styl flex-wrap: wrap;
 służący do przenoszenia elementów listy do nowego wiersza,
 jeśli nie ma wystarczająco dużo miejsca w poprzednim*/
-.link {
+.buttons-link {
     display:flex;
     flex-wrap: wrap;
     column-gap: 24px;
