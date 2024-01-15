@@ -326,11 +326,12 @@ służący do pionowego wyrównania nawigacji i kontaktów */
 .menu-nav-box {
     display: flex;
     gap: 40px;
-}
-/* Dla linku znajdującego się w pierwszym punkcie menu */
-.menu {
     padding: 24px 0;
 }
+/* Dla linku znajdującego się w pierwszym punkcie menu */
+/* .menu {
+    padding: 24px 0;
+} */
 /* Wewnątrz znacznika address znajduje się lista,
 dla której przypisane są klasy */
 .menu-address-box {
