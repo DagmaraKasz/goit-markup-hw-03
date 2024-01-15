@@ -292,9 +292,9 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    border-bottom: 1px solid #E7E9FC;
+    /* border-bottom: 1px solid #E7E9FC;
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 15px; */
 }
 /* Dla nav styl display: flex;
 służący do ułożenia logo i menu w jednym wierszu; styl align-items: center;
@@ -308,15 +308,20 @@ służący do pionowego wyrównania nawigacji i kontaktów */
     border-color: var(--cornflower-color);
 }
 
-/* .header-main-class {
-    border-bottom: 1px, solid, #E7E9FC;
-    padding-left: 15px;
-    padding-right: 15px;
-} nie sczytuje tego wiec przerzucam do nav-all-container*/
+/* nie sczytuje tego wiec przerzucam do nav-all-container */
+.header-main-class {
+    border-bottom: 1px solid #E7E9FC;
+    padding-left:15px;
+    padding-right:15px;
+}
 
-.logo-box {
+/* .logo-box {
+    margin-right: 76px;
+} */
+.logo {
     margin-right: 76px;
 }
+
 
 /* lista menu glównego w nawigacji */
 .menu-nav-box {
