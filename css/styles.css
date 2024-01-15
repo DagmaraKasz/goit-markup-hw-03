@@ -317,17 +317,15 @@ służący do pionowego wyrównania nawigacji i kontaktów */
     margin-right: 76px;
 }
 
-
 /* lista menu glównego w nawigacji */
 .logo-box {
     display: flex;
     list-style: none;
-    gap: 40px;
-    padding: 24px;
 }
 .menu-nav-box {
     display: flex;
-/* margin-right: 40px; */
+    gap: 40px;
+    padding: 24px;
 }
 
 .menu-address-box {
