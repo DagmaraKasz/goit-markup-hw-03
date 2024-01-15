@@ -284,23 +284,31 @@ a {
     letter-spacing: 0.02em;
 }
 
-/* nagłówek - dodwanie kontenerów*/
-.container {
-        width: 1158px;
-        margin: 0 auto;
-        padding-left: 15px;
-        padding-right: 15px;
-}
+/* nagłówek - dodwanie kontenerów lekcja 3*/
 
 /* nawigacja dla Index i Portfolio*/
+/* Dla headera przypisane są klasy */
+.header-main-class {
+    border-bottom: 1px solid #E7E9FC;
+    /* padding-left: 15px;
+    padding-right: 15px; */
+}
+/* Wewnątrz headera znajduje się div - kontener zawierający wszystkie pozostałe elementy headera */
 .nav-all-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
 }
-/* Dla nav styl display: flex;
-służący do ułożenia logo i menu w jednym wierszu; styl align-items: center;
+/* Dla kontenera przypisana jest dodatkowa domyślna klasa container,która służy do standaryzacji rozmiarów treści */
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* Wewnątrz headera znajduje się nav */
+/* Dla nav styl display: flex;służący do ułożenia logo i menu w jednym wierszu; styl align-items: center;
 służący do pionowego wyrównania nawigacji i kontaktów */
 .nav {
     display: flex;
@@ -310,35 +318,33 @@ służący do pionowego wyrównania nawigacji i kontaktów */
     padding: 20px;
     border-color: var(--cornflower-color);
 }
-
-/* nie sczytuje tego wiec przerzucam do nav-all-container */
-.header-main-class {
-    border-bottom: 1px solid #E7E9FC;
-    padding-left:15px;
-    padding-right:15px;
-}
-
+/* Wewnątrz nawigacji znajduje się logo */
 .logo {
     margin-right: 76px;
 }
-
-/* lista menu glównego w nawigacji */
-.logo-box {
-    display: flex;
-    list-style: none;
-}
+/* Wewnątrz nawigacji znajduje się menu "menu-nav-box" */
 .menu-nav-box {
     display: flex;
     gap: 40px;
-    padding: 24px;
+    
 }
-
+/* Dla linku znajdującego się w pierwszym punkcie menu */
+.menu {
+    padding: 24px 0;
+}
+/* lista menu glównego w nawigacji */
+/* .logo-box {
+    display: flex;
+    list-style: none;
+} */
+/* Wewnątrz znacznika address znajduje się lista */
 .menu-address-box {
     list-style: none;
     display: flex;
     justify-content: center;
     align-content: center;
-    padding: 30px;           
+    padding: 30px;
+    gap: 40px;
 }
 .contact {
     padding-right: 40px;
@@ -496,30 +502,33 @@ służący do określenia szerokości punktu listy (odejmujemy sumę odstępów 
     display: flex;
     justify-content: center;
     gap: 24px;
-    width: calc((100%-48px)/3);
-    /* width: calc((100% - 72px)/4); */
 }
+/* Dla pierwszego punktu listy */
 .list-people {
     width: 264px;
     height: 380px;
-}
-.names-positions-box {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-left: 16px;
-    padding-right: 16px;
+    width: calc((100% - 72px)/4);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
 }
+/* W pierwszym punkcie listy znajduje się div,który służy jako kontener dla imienia pracownika i nazwy jego stanowiska */
+.names-positions-box {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+/* nagłówek h3 imie i nazwisko */
 .people-names {
     text-align: center;
     margin-bottom: 8px;
 }
-/* .positions {
+/* W kontenerze drugim elementem jest akapit p */
+.position {
     text-align: center;
-} */
+}
 
 /* footer */
 .page-footer {
