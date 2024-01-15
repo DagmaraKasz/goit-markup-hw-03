@@ -329,9 +329,9 @@ służący do pionowego wyrównania nawigacji i kontaktów */
     padding: 24px 0;
 }
 /* Dla linku znajdującego się w pierwszym punkcie menu */
-/* .menu {
+.menu {
     padding: 24px 0;
-} */
+}
 /* Wewnątrz znacznika address znajduje się lista,
 dla której przypisane są klasy */
 .menu-address-box {
@@ -383,7 +383,7 @@ dla której przypisane są klasy */
 }
 /* Dla pierwszego punktu listy w klasie ustawiony jest styl width: calc((100% - 72px) / 4); służący do określenia szerokości punktu listy (odejmujemy sumę odstępów między punktami od całkowitej szerokości ekranu i dzielimy to przez liczbę punktów listy) (można również użyć width calc((100% - 3 * 24px) / 4) lub flex-basis: calc((100% - 3 * 24px) / 4), lub flex-basis: calc((100% - 72px) / 4)) */
 .features-elements {
-    flex-basis: calc((100% - 72px) / 4);
+    flex-basis: calc((100% - 72px)/4);
 }
 /* nagłówek h3 np.Strategy */
 .highlight-element {
