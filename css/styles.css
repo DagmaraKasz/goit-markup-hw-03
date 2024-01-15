@@ -326,18 +326,13 @@ służący do pionowego wyrównania nawigacji i kontaktów */
 .menu-nav-box {
     display: flex;
     gap: 40px;
-    
 }
 /* Dla linku znajdującego się w pierwszym punkcie menu */
 .menu {
     padding: 24px 0;
 }
-/* lista menu glównego w nawigacji */
-/* .logo-box {
-    display: flex;
-    list-style: none;
-} */
-/* Wewnątrz znacznika address znajduje się lista */
+/* Wewnątrz znacznika address znajduje się lista,
+dla której przypisane są klasy */
 .menu-address-box {
     list-style: none;
     display: flex;
@@ -346,31 +341,7 @@ służący do pionowego wyrównania nawigacji i kontaktów */
     padding: 30px;
     gap: 40px;
 }
-.contact {
-    padding-right: 40px;
-}
-.menu {
-    margin: 0 10px;
-}
-.menu a {
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
-}
 
-/* .address {
-    display: flex;
-    justify-content: space-between;
-    margin-left: auto;
-    background-color: var(--white-color);
-    padding: 30px;
-    height: 60px;
-} */
-/* .contact {
-    display: flex;
-    list-style: none;
-    padding: 30px;
-} */
 /* sekcja pierwsza description Solutions */
 .descriptions {
     padding-top: 188px;
@@ -553,10 +524,13 @@ służący do określenia szerokości punktu listy (odejmujemy sumę odstępów 
 }
 /* strona Portfolio.html main */
 
+/* Wewnątrz znacznika main znajduje się sekcja utworzona za pomocą znacznika section */
 .buttons-main {
     padding-top: 96px;
     padding-bottom: 120px;
 }
+/* Cała treść sekcji jest umieszczona w kontenerze utworzonym przy użyciu znacznika div. Dla tego div przypisana jest domyślna klasa container. Wewnątrz kontenera znajduje się lista */
+
 /* display flex służy do ułożenia elementów listy poziomo w jednym rzędzie; justify-content: center służy do wyśrodkowania elementów potomnych listy; styl gap: 24px służy do określenia odstępów między punktami listy; styl margin-bottom: 72px,
 który służy do określenia odstępu od listy */
 .list-buttons {
@@ -565,34 +539,36 @@ który służy do określenia odstępu od listy */
     gap: 24px;
     margin-bottom: 72px;
 }
+/* W pierwszym punkcie listy znajduje się przycisk */
 .buttons {
     padding: 12px 24px;
     border: 1px solid #e7e9fc;
+    border-radius: 4px;
 }
 .buttons:focus,
 .buttons:hover {
     border: 1px solid transparent;
     border-radius: 4px;
 }
-/* Jeszcze jedna lista wewn kontenera - styl flex-wrap: wrap;
-służący do przenoszenia elementów listy do nowego wiersza,
-jeśli nie ma wystarczająco dużo miejsca w poprzednim*/
+/* Jeszcze jedna lista wewnątrz kontenera - zdjęcia - styl flex-wrap: wrap;służący do przenoszenia elementów listy do nowego wiersza, jeśli nie ma wystarczająco dużo miejsca w poprzednim*/
 .buttons-link {
     display:flex;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
 }
-/* Dla pierwszego punktu listy w klasie ustawiony jest styl width: calc((100% - 48px) / 3);
-służący do określenia szerokości punktu listy (odejmujemy sumę odstępów między punktami od całkowitej szerokości ekranu i dzielimy to przez liczbę punktów listy w jednym wierszu) */
+/* Dla pierwszego punktu listy w klasie ustawiony jest styl width: calc((100% - 48px) / 3);służący do określenia szerokości punktu listy (odejmujemy sumę odstępów między punktami od całkowitej szerokości ekranu i dzielimy to przez liczbę punktów listy w jednym wierszu) */
 .list-link-buttons {
     width: calc((100%-48px)/3);      
 }
+/* Wewnątrz pierwszego punktu listy znajduje się link. W linku znajduje się kontener dla nazwy i kategorii aplikacji,
+który jest utworzony za pomocą znacznika div*/
 .name-cat-app-box {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
 }
+/* Dla nagłówka w klasie ustawiony jest styl margin-bottom: 8px,który służy do określenia odstępu między akapitem a nagłówkiem */
 .header-list {
     margin-bottom: 8px;
 }
