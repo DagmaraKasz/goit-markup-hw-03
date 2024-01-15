@@ -302,7 +302,7 @@ służący do pionowego wyrównania nawigacji i kontaktów */
 .nav {
     display: flex;
     justify-content: flex-start;
-    align-items: baseline;
+    align-items: center;
     background-color: var(--white-color);
     padding: 20px;
     border-color: var(--cornflower-color);
@@ -405,11 +405,11 @@ służący do pionowego wyrównania nawigacji i kontaktów */
     line-height: 24px;
     font-size: 20px;
 }
-.akapit {
-    /* width: 264px;
+/* .akapit {
+    width: 264px;
     height: 24px;
-    font-size: 16px; */
-}
+    font-size: 16px;
+} */
 
 /* wzorzec .visually-hidden do ukrycia nagłówka (zbiór styli wykorzystywanych do pełnego ukrycia elementu)*/
 .visually-hidden {
