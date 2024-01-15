@@ -283,7 +283,8 @@ a {
 .container {
         width: 1158px;
         margin: 0 auto;
-        padding: 0 15px 0 15px;
+        padding-left: 15px;
+        padding-right: 15px;
 }
 
 /* nawigacja dla Index i Portfolio*/
@@ -292,9 +293,6 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    /* border-bottom: 1px solid #E7E9FC;
-    padding-left: 15px;
-    padding-right: 15px; */
 }
 /* Dla nav styl display: flex;
 służący do ułożenia logo i menu w jednym wierszu; styl align-items: center;
@@ -315,21 +313,23 @@ służący do pionowego wyrównania nawigacji i kontaktów */
     padding-right:15px;
 }
 
-/* .logo-box {
-    margin-right: 76px;
-} */
 .logo {
     margin-right: 76px;
 }
 
 
 /* lista menu glównego w nawigacji */
-.menu-nav-box {
+.logo-box {
     display: flex;
     list-style: none;
-    padding: 30px;
-    margin-right: 40px;
+    gap: 40px;
+    padding: 24px;
 }
+.menu-nav-box {
+    display: flex;
+/* margin-right: 40px; */
+}
+
 .menu-address-box {
     list-style: none;
     display: flex;
