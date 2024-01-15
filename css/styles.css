@@ -487,10 +487,7 @@ służący do określenia szerokości punktu listy (odejmujemy sumę odstępów 
 }
 /* W pierwszym punkcie listy znajduje się div,który służy jako kontener dla imienia pracownika i nazwy jego stanowiska */
 .names-positions-box {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 32px 0;
 }
 /* nagłówek h3 imie i nazwisko */
 .people-names {
