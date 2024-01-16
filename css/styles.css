@@ -1,8 +1,7 @@
 *, *::before, *::after {
     box-sizing: border-box;
     padding: 0;
-    margin: 0;
-    font-family: 'Raleway', sans-serif;
+    margin: 0;    
 }
 
 :root {
@@ -71,6 +70,7 @@ a {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    font-weight: 400;
 }
 
 /* main section h1, przycisk Order Service na index.html przyciski w portfolio*/
@@ -174,7 +174,7 @@ a {
     letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--slate-color);
-    text-align: center;
+    /* text-align: center; */
 }
 /* trzecia sekcja 'What we are doing'*/
 .subtitle {
@@ -290,15 +290,14 @@ a {
 /* Dla headera przypisane są klasy */
 .header-main-class {
     border-bottom: 1px solid #E7E9FC;
-    /* padding-left: 15px;
-    padding-right: 15px; */
 }
 /* Wewnątrz headera znajduje się div - kontener zawierający wszystkie pozostałe elementy headera */
 .nav-all-container {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: first baseline; */
     align-items: center;
-    padding: 10px;
+    width: 1440px;
+    /* margin-bottom: 16px; */
 }
 /* Dla kontenera przypisana jest dodatkowa domyślna klasa container,która służy do standaryzacji rozmiarów treści */
 .container {
@@ -315,18 +314,18 @@ służący do pionowego wyrównania nawigacji i kontaktów */
     justify-content: flex-start;
     align-items: center;
     background-color: var(--white-color);
-    padding: 20px;
+    /* padding: 20px; */
     border-color: var(--cornflower-color);
 }
 /* Wewnątrz nawigacji znajduje się logo */
 .logo {
+    margin-left: 156px;
     margin-right: 76px;
 }
 /* Wewnątrz nawigacji znajduje się menu "menu-nav-box" */
 .menu-nav-box {
     display: flex;
     gap: 40px;
-    padding: 24px 0;
 }
 /* Dla linku znajdującego się w pierwszym punkcie menu */
 .menu {
@@ -339,23 +338,22 @@ dla której przypisane są klasy */
     display: flex;
     justify-content: center;
     align-content: center;
-    padding: 30px;
     gap: 40px;
+    margin-left: 156px;
 }
-
+.logo-box {
+    align-content: center;
+}
 /* sekcja pierwsza description Solutions */
 .descriptions {
     padding-top: 188px;
     padding-bottom: 188px;
-    align-items: center;
 }
 .title {
-    display:inline;
+    display:block;
     max-width: 496px;
+    margin: auto;
     margin-bottom: 48px;
-    /* height: 120px; */
-    top: 260px;
-    left: 472px;
 }
 .button-index {
     display: block;
@@ -366,6 +364,7 @@ dla której przypisane są klasy */
     padding: 16px 32px 16px 32px;
     border-radius: 4px;
     margin-top: 48px;
+    margin: auto;
     cursor: pointer;
 }
 
@@ -393,11 +392,11 @@ dla której przypisane są klasy */
     /* line-height: 24px;
     font-size: 20px; */
 }
-/* .akapit {
+.akapit {
     width: 264px;
     height: 24px;
     font-size: 16px;
-} */
+}
 
 /* wzorzec .visually-hidden do ukrycia nagłówka (zbiór styli wykorzystywanych do pełnego ukrycia elementu)*/
 .visually-hidden {
@@ -461,6 +460,7 @@ służący do określenia szerokości punktu listy (odejmujemy sumę odstępów 
 .container-our-team {
     /* display: inline; */
     display: block;
+    width: 1440px;
     height: 732px;
 }
 /* nagłówek h2 our team */
@@ -472,12 +472,14 @@ służący do określenia szerokości punktu listy (odejmujemy sumę odstępów 
 /* cały box dla zdj nagłówka h3 i paragrafu */
 .people-box {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     gap: 24px;
+    /* margin-left: 156px;
+    margin-right: 24px; */
 }
 /* Dla pierwszego punktu listy */
 .list-people {
-    width: 264px;
+    width: 1440px;
     height: 380px;
     width: calc((100% - 72px)/4);
     border-top-left-radius: 0px;
@@ -488,6 +490,8 @@ służący do określenia szerokości punktu listy (odejmujemy sumę odstępów 
 /* W pierwszym punkcie listy znajduje się div,który służy jako kontener dla imienia pracownika i nazwy jego stanowiska */
 .names-positions-box {
     padding: 32px 0;
+    width: 264px;
+    height: 380px;
 }
 /* nagłówek h3 imie i nazwisko */
 .people-names {
@@ -505,20 +509,23 @@ służący do określenia szerokości punktu listy (odejmujemy sumę odstępów 
     padding-bottom: 100px;
 }
 .footer-container {
-    width: 264px;
-    height: 112px;
+    width: 1440px;
+    /* height: 312px; */
 }
-.logo-footer-box {
-    display: inline-block;
-    margin-bottom: 16px;
- }
 .logo {
     display: inline-block;
-    margin-bottom: 16px;
     max-width: 264px;
 }
-.footer-info {
+/* .logo-footer-box {
     display: inline-block;
+    margin-bottom: 16px;
+} */
+
+.footer-info {
+    display: block;
+    margin-left: 156px;
+    width: 264px;
+    margin-top: 16px;
 }
 /* strona Portfolio.html main */
 
