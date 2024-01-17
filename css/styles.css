@@ -295,10 +295,8 @@ a {
 /* Wewnątrz headera znajduje się div - kontener zawierający wszystkie pozostałe elementy headera */
 .nav-all-container {
     display: flex;
-    /* justify-content: first baseline; */
     align-items: center;
     width: 1440px;
-    /* margin-bottom: 16px; */
 }
 /* Dla kontenera przypisana jest dodatkowa domyślna klasa container,która służy do standaryzacji rozmiarów treści */
 .container {
@@ -315,7 +313,6 @@ służący do pionowego wyrównania nawigacji i kontaktów */
     justify-content: flex-start;
     align-items: center;
     background-color: var(--white-color);
-    /* padding: 20px; */
     border-color: var(--cornflower-color);
 }
 /* Wewnątrz nawigacji znajduje się logo */
@@ -493,10 +490,7 @@ służący do określenia szerokości punktu listy (odejmujemy sumę odstępów 
     width: 1440px;
     height: 380px;
     width: calc((100% - 72px)/4);
-    /* border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px; */
+    border-radius: 0px 0px 4px 4px;
 }
 /* W pierwszym punkcie listy znajduje się div,który służy jako kontener dla imienia pracownika i nazwy jego stanowiska */
 .names-positions-box {
@@ -527,10 +521,9 @@ służący do określenia szerokości punktu listy (odejmujemy sumę odstępów 
     display: inline-block;
     max-width: 264px;
 }
-/* .logo-footer-box {
-    display: inline-block;
+.logo-footer-box {
     margin-bottom: 16px;
-} */
+}
 
 .footer-info {
     display: block;
