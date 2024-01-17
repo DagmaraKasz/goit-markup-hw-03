@@ -104,7 +104,8 @@ a {
 
 /* tło dla tekstu effective solutions w index.html */
 .descriptions {
-    background-color: var(--navyblue-color, #2e2f42);
+    background-color: var(--grey-color, #2e2f42);
+    margin: auto;
 }
 .title {
     font-size: 56px;
@@ -348,6 +349,7 @@ dla której przypisane są klasy */
 .descriptions {
     padding-top: 188px;
     padding-bottom: 188px;
+    margin: auto;
 }
 .title {
     display:block;
