@@ -41,6 +41,8 @@ a {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding: 24px 0;
+    display: inline-block;
 }
 
 .menu .link:hover,
@@ -57,6 +59,7 @@ a {
 
 .contact .link {
     color: var(--slate-color);
+    padding: 24px 0;
 }
 .contact .link:hover,
 .contact .link:focus {
@@ -324,7 +327,7 @@ służący do pionowego wyrównania nawigacji i kontaktów */
 .menu-nav-box {
     display: flex;
     gap: 40px;
-    padding: 24px 0;
+    /* padding: 24px 0; */
 }
 /* Dla linku znajdującego się w pierwszym punkcie menu */
 /* .menu {
@@ -452,7 +455,6 @@ służący do określenia szerokości punktu listy (odejmujemy sumę odstępów 
 
 /* czwarta sekcja our team */
 .people {
-    width: 1440px;
     height: 732px;
     padding-bottom: 120px;
     padding-top: 120px;
@@ -569,7 +571,7 @@ który służy do określenia odstępu od listy */
 }
 /* Dla pierwszego punktu listy w klasie ustawiony jest styl width: calc((100% - 48px) / 3);służący do określenia szerokości punktu listy (odejmujemy sumę odstępów między punktami od całkowitej szerokości ekranu i dzielimy to przez liczbę punktów listy w jednym wierszu) */
 .list-link-buttons {
-    width: calc((100%-48px)/3);      
+    width: calc((100% - 48px)/3);      
 }
 /* Wewnątrz pierwszego punktu listy znajduje się link. W linku znajduje się kontener dla nazwy i kategorii aplikacji,
 który jest utworzony za pomocą znacznika div*/
