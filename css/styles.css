@@ -429,7 +429,7 @@ dla której przypisane są klasy */
     display: flex;
     flex-direction: column;
     padding-bottom: 120px;
-    /* margin-bottom: 10px; */
+    padding-top: 120px;
 }
 /* nagłówek h2 What are we doing */
 .subtitle {
